@@ -1,0 +1,217 @@
+
+* {
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #dadada;
+}
+
+#header {
+  height: 200px;
+  margin: 0;
+}
+
+#header h1 {
+  display: table;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  padding: 50px 50px 0 50px;
+  font-size: 55px;
+}
+
+#header p {
+  display: table;
+  color: #ffe5b4;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.link{
+  display: table;
+  color: #e2a129;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  font-size: 40px;
+}
+
+a{
+  text-decoration: none;
+  outline: none;
+}
+
+
+.container{
+  width: 70vw;
+  margin: 5% auto;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.09);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Nunito', sans-serif;
+  color: #303030;
+
+  background: #3a43b8;
+  background: linear-gradient(135deg, #3a43b8 0%, #3d2fa3 50%, #3a43b8 100%);
+}
+
+.card-container.high-tech {
+  border-left: 8px solid #4ec9d4;
+}
+.card-container.high-tech:hover .card-title {
+  color: #4ec9d4;
+}
+.card-container.high-tech .card-category {
+  color: #4ec9d4;
+}
+.card-container.high-tech .card-category::after {
+  background-color: #4ec9d4;
+}
+.card-container.high-tech .card-date {
+  color: #4ec9d4;
+}
+
+
+.card-container {
+  height: 300px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition-duration: .3s;
+  transform: scale(0.8);
+  overflow: hidden;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.4);
+  transition-duration: .3s;
+}
+
+.card-container:hover .card-category::after {
+  transition-duration: .3s;
+  left: 280px;
+  opacity: 0;
+}
+
+.card-container:hover .card-category::before {
+  transition-duration: .3s;
+  opacity: 1;
+}
+
+.card-container:hover .card-title {
+  transition-duration: .3s;
+}
+
+.card-category {
+  height: 50px;
+  position: relative;
+  padding: 15px 20px;
+  font-weight: 700;
+  text-align: left;
+  font-size: 20px;
+}
+
+h1 > a{
+  text-decoration: none;
+  color: #ffe5b4;
+  font-size: 50px;
+}
+
+.card-category::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 5px;
+  bottom: -5px;
+  left: 20px;
+  opacity: 1;
+  border-radius: 10px;
+  transition-duration: .3s;
+}
+
+.card-category::before {
+  content: '\00BB';
+  position: absolute;
+  display: block;
+  right: 20px;
+  opacity: 0;
+  bottom: -10px;
+  font-size: 3rem;
+  transition-duration: .3s;
+
+}
+
+.card-body {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-content {
+  width: 60%;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #3d2fa3;
+}
+
+.card-date {
+  font-size: .8rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.card-extract {
+  color: #808080;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.card-thumb {
+  height: 90%;
+  width: 30%;
+  object-fit: scale-down;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#footer {
+  height: 100px;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  background: #374760;
+}
+
+.news-detail{
+  color:#dadada;
+  padding: 20px;
+
+}
+
+a{
+  color: #dadada;
+  font-size: 40px;
+}
+
+.detail_picture{
+  float: left;
+  margin: 4px 10px 2px 0px;
+
+}
