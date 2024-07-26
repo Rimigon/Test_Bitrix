@@ -23,5 +23,4 @@ $asset = Asset::getInstance();
         <div class="container">
         <div id="header">
           <h1><a href="http://test-project/">Новости</a></h1></br>
-          <p>Новости нашего села</p>
         </div>
